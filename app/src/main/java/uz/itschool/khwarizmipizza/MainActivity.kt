@@ -14,16 +14,23 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val sharedReference = getSharedPreferences("FILE", MODE_PRIVATE)
+        val edit  = sharedReference.edit()
         binding.btnEnglish.setOnClickListener {
             setAppLocale(this, "en")
             val intent = Intent(this, Registration::class.java)
+            edit.putString("lang","en").apply()
             startActivity(intent)
         }
         binding.btnUzbek.setOnClickListener{
             setAppLocale(this, "uz")
             val intent = Intent(this, Registration::class.java)
+            edit.putString("lang","uz").apply()
             startActivity(intent)
         }
+
+
+
 
     }
     fun setAppLocale(context: Context, language: String) {

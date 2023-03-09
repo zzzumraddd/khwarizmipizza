@@ -3,6 +3,9 @@
     <string name="app_name">KhwarizmiPizza</string>
     <string name="registration">Registratsiya</string>
     <string name="name">Sizning ismingiz:</string>
-    <string name="login">Login:</string>
+    <string name="password">Kalit:</string>
     <string name="address">Manzilingiz:</string>
+    <string name="singin">Ulanmoq</string>
+    <string name="signup">Saqlamoq</string>
+    <string name="welcome">Xush Kelibsiz!</string>
 </resources>
