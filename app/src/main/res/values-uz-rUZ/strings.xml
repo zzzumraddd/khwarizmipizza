@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KhwarizmiPizza</string>
+    <string name="registration">Registratsiya</string>
+    <string name="name">Sizning ismingiz:</string>
+    <string name="login">Login:</string>
+    <string name="address">Manzilingiz:</string>
+</resources>

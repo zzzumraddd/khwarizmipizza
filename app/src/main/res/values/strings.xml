@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">KhwarizmiPizza</string>
+    <string name="registration">Registration</string>
+    <string name="name">Your Name:</string>
+    <string name="login">Login:</string>
+    <string name="address">Your address:</string>
 </resources>
