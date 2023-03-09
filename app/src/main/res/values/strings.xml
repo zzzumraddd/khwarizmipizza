@@ -7,4 +7,6 @@
     <string name="singin">Sign In</string>
     <string name="signup">Sign Up</string>
     <string name="welcome">Welcome!</string>
+    <string name="offer">The Best Offers:</string>
+    <string name="search">Search</string>
 </resources>
