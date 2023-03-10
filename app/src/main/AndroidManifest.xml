@@ -13,6 +13,12 @@
         android:theme="@style/Theme.KhwarizmiPizza"
         tools:targetApi="31">
         <activity
+            android:name=".Cartt"
+            android:exported="false" />
+        <activity
+            android:name=".DetailedActivity"
+            android:exported="false" />
+        <activity
             android:name=".Menu"
             android:exported="false">
             <meta-data

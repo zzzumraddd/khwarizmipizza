@@ -6,6 +6,7 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import java.util.*
 
 class SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +22,7 @@ class SplashScreen : AppCompatActivity() {
                 if (s==""){
                     intent = Intent(this, MainActivity::class.java)
                 }else{
+                    setAppLocale(this, s.toString())
                     intent = Intent(this, SignIn::class.java)
                 }
 
@@ -29,5 +31,13 @@ class SplashScreen : AppCompatActivity() {
         )
 
 
+    }
+    fun setAppLocale(context: Context, language: String) {
+        val locale = Locale(language)
+        Locale.setDefault(locale)
+        val config = context.resources.configuration
+        config.setLocale(locale)
+        context.createConfigurationContext(config)
+        context.resources.updateConfiguration(config, context.resources.displayMetrics)
     }
 }
