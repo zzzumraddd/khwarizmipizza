@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import uz.itschool.khwarizmipizza.databinding.CategoryItemBinding
 import uz.itschool.khwarizmipizza.databinding.OfferItemsBinding
@@ -24,6 +25,7 @@ class Product_Adapter(var list: MutableList<Product>, var mutableList: MutableLi
         var price: TextView = binding.price
         var del: Button = binding.del
         var add: Button = binding.add
+        var card: CardView = binding.card
 
     }
 
@@ -41,7 +43,7 @@ class Product_Adapter(var list: MutableList<Product>, var mutableList: MutableLi
         holder.img.setImageResource(list.get(position).image)
 
 
-        holder.itemView.setOnClickListener {
+        holder.card.setOnClickListener {
             onItemClick?.invoke(list.get(position))
         }
         holder.add.setOnClickListener {
@@ -51,6 +53,7 @@ class Product_Adapter(var list: MutableList<Product>, var mutableList: MutableLi
             for(i in mutableList){
                 if(i == list.get(position).pric){
                     mutableList.remove(i)
+                    break
                 }
             }
         }

@@ -24,12 +24,12 @@ class Menu : AppCompatActivity() {
         setContentView(binding.root)
         sets = mutableListOf<Product>()
         sets.add(Product("CHSB Gref SET", "40.000 so'm", R.drawable.set2, 40000, "sets"))
-        sets.add(Product("BSB Gref SET", "25.000 so'm", 25000, R.drawable.set3,"sets" ))
-        sets.add(Product("Formativ Gref SET", "10.000 so'm", 10000, R.drawable.set1, "sets"))
-        sets.add(Product("Italiano Pizza", "80.000 so'm", 80000, R.drawable.pizzas, "pizzas"))
-        sets.add(Product("Diet Salad", "15.000 so'm", 15000, R.drawable.salads, "salads"))
-        sets.add(Product("Moxito", "25.000 so'm", 25000,R.drawable.drinks, "drinks"))
-        sets.add(Product("Cheese Cake", "20.000 so'm", 20000, R.drawable.deserts, "deserts"))
+        sets.add(Product("BSB Gref SET", "25.000 so'm", R.drawable.set3,25000, "sets" ))
+        sets.add(Product("Formativ Gref SET", "10.000 so'm",  R.drawable.set1, 10000,"sets"))
+        sets.add(Product("Italiano Pizza", "80.000 so'm",  R.drawable.pizzas, 80000,"pizzas"))
+        sets.add(Product("Diet Salad", "15.000 so'm",  R.drawable.salads,15000, "salads"))
+        sets.add(Product("Moxito", "25.000 so'm", R.drawable.drinks, 25000,"drinks"))
+        sets.add(Product("Cheese Cake", "20.000 so'm",  R.drawable.deserts,20000, "deserts"))
 
 
         categories = mutableListOf()
